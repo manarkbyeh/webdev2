@@ -5,7 +5,6 @@ $greenColor: #01a6a0;
 
 .upper-bar {
     border-top: 4px solid $greenColor;
-    height: 60px;
     .navbar-brand {
         position: relative;
         z-index: 999;
@@ -90,6 +89,34 @@ $greenColor: #01a6a0;
         }
         &:hover {
             background: transparent!important;
+        }
+    }
+}
+
+.most-pop {
+    background-color: #eaeaea;
+    margin-top: 40px;
+    .heading {
+        text-align: center;
+        color: #21398b;
+        padding: 30px 0px;
+        margin: 0px;
+        i {
+            font-size: 25px;
+            width: 27px;
+            height: 27px;
+            border: 3px solid#0f2277;
+            border-radius: 50%;
+        }
+    }
+    .image {
+        position: relative;
+        &:hover .more {
+            display: block;
+        }
+        .more {
+            display: none;
+            cursor: pointer;
         }
     }
 }
