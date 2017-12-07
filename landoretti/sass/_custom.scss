@@ -16,6 +16,10 @@ $greenColor: #01a6a0;
             box-shadow: 0px 4px 10px 1px rgba(48, 48, 46, 0.4)
         }
     }
+    .navbar {
+        margin-top: 100px;
+        width: 100%;
+    }
     .text-left {
         float: left;
         margin-top: 5px;
@@ -45,6 +49,47 @@ $greenColor: #01a6a0;
         button {
             font-size: 18px;
             color: #21398b;
+        }
+    }
+}
+
+.carousel {
+    .item {
+        .carousel-caption {
+            background-color: #21398b;
+            padding: 35px 55px;
+        }
+    }
+    .carousel-indicators {
+        li {
+            background-color: #e2e2e2;
+            width: 14px;
+            height: 14px;
+            margin: 0 5px;
+            &.active {
+                opacity: .5;
+            }
+        }
+    }
+    .carousel-control {
+        background: transparent!important;
+        opacity: 1;
+        text-shadow: none;
+        top: 40%;
+        cursor: default;
+        span {
+            font-size: 48px;
+            width: 50px;
+            height: 80px;
+            line-height: 80px;
+            cursor: pointer;
+            color: #e8e8e8;
+            &:hover {
+                background-color: rgba(0, 0, 0, .4);
+            }
+        }
+        &:hover {
+            background: transparent!important;
         }
     }
 }
