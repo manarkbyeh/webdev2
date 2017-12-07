@@ -1,0 +1,20 @@
+// Start Variables
+$greenColor: #01a6a0;
+
+/* Start Upper Bar */
+
+.upper-bar {
+    border-top: 4px solid $greenColor;
+    height: 60px;
+    line-height: 50px;
+    .navbar-brand {
+        position: relative;
+        z-index: 999;
+        top: -31px;
+        height: 0;
+        margin-right: 40px;
+        img {
+            box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2)
+        }
+    }
+}
