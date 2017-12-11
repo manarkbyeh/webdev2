@@ -1,10 +1,13 @@
 // Start Variables
+$blueColor: #21398b;
 $greenColor: #01a6a0;
 
 /* Start Upper Bar */
 
 .upper-bar {
     border-top: 4px solid $greenColor;
+    height: 60px;
+    line-height: 50px;
     .navbar-brand {
         position: relative;
         z-index: 999;
@@ -12,12 +15,8 @@ $greenColor: #01a6a0;
         height: 0;
         margin-right: 40px;
         img {
-            box-shadow: 0px 4px 10px 1px rgba(48, 48, 46, 0.4)
+            box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2)
         }
-    }
-    .navbar {
-        margin-top: 100px;
-        width: 100%;
     }
     .text-left {
         float: left;
@@ -25,13 +24,48 @@ $greenColor: #01a6a0;
         ul {
             margin-bottom: 0;
             li {
-                color: #21398b;
+                text-transform: uppercase;
+                display: inline-block;
+                color: $blueColor;
                 font-size: 13px;
                 span {
                     border-right: 2px solid#abacb2;
-                    padding-right: 5px;
-                    padding-left: 5px;
+                    padding-right: 15px;
+                    padding-left: 15px;
                     cursor: pointer;
+                }
+                &:last-child span {
+                    border-right: 0;
+                }
+                i {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+            &.login-form {
+                li span {
+                    border-right: 0;
+                }
+                input {
+                    display: inline-block;
+                    width: 120px;
+                    border: 1px solid#ccc;
+                    border-radius: 2px;
+                    background-color: #fefdfd;
+                    box-shadow: none;
+                    height: 28px;
+                    margin-right: 20px;
+                }
+                .enter {
+                    border: none;
+                    outline: none;
+                    background-color: #ddd;
+                    font-size: 24px;
+                    height: 30px;
+                    padding: 0px 10px;
+                    position: relative;
+                    top: 5px;
+                    line-height: 1px;
                 }
             }
         }
@@ -39,15 +73,22 @@ $greenColor: #01a6a0;
     .search {
         float: right;
         input {
-            width: 100%;
-            height: 60%;
-            float: left;
+            width: 207px;
+            height: 35px;
+            display: inline-block;
+            box-shadow: none;
             border: 1px solid#bebebd;
             color: #333;
+            &::-webkit-input-placeholder {
+                color: #333;
+            }
         }
         button {
+            background: none;
+            border: none;
+            outline: none;
             font-size: 18px;
-            color: #21398b;
+            color: $blueColor;
         }
     }
 }
@@ -55,7 +96,7 @@ $greenColor: #01a6a0;
 .carousel {
     .item {
         .carousel-caption {
-            background-color: #21398b;
+            background-color: $blueColor;
             padding: 35px 55px;
         }
     }
@@ -98,14 +139,14 @@ $greenColor: #01a6a0;
     margin-top: 40px;
     .heading {
         text-align: center;
-        color: #21398b;
+        color: $blueColor;
         padding: 30px 0px;
         margin: 0px;
         i {
             font-size: 25px;
             width: 27px;
             height: 27px;
-            border: 3px solid#0f2277;
+            border: 3px solid $blueColor;
             border-radius: 50%;
         }
     }
@@ -119,4 +160,11 @@ $greenColor: #01a6a0;
             cursor: pointer;
         }
     }
+}
+
+.navbar {
+    background-color: #eaeaea;
+    border: 0;
+    width: 100%;
+    margin-bottom: 0;
 }

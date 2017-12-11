@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landoretti</title>
-    <link rel="stylesheet" type="text/css" href="bxslider/dist/jquery.bxslider.min.css" />
-
-
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
@@ -16,6 +13,7 @@
 </head>
 
 <body>
+
     <!-- Start Upper Bar -->
     <div class="upper-bar">
         <div class="container">
@@ -26,61 +24,74 @@
             </a>
             <!-- End Website Logo -->
 
-
-
+            <!-- Start Left Nav -->
             <div class="text-left">
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled login ">
                     <li><span>Register</span></li>
-                    <li><span>Login</span></li>
+                    <li class="login-btn"><span>Login</span></li>
                 </ul>
-
+                <ul class="list-unstyled login-form hidden">
+                    <li><span>Register</span></li>
+                    <input type="text" class="form-control" id="usr" placeholder="User">
+                    <input type="text" class="form-control" id="usr" placeholder="Password">
+                    <button class="enter">
+              <i class="fa fa-angle-right"></i>
+            </button>
+                </ul>
             </div>
+            <!-- Start Left Nav -->
+
             <!-- Start Nav Search -->
             <div class="search">
                 <input type="text" class="form-control" id="usr" placeholder="Search">
                 <button><i class="fa fa-search "></i></button>
             </div>
+            <!-- Start Nav Search -->
 
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Brand</a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
-
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">nl</a></li>
-                            <li><a href="#">fr</a></li>
-                            <li><a href="#">en</a></li>
-
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container -->
-            </nav>
-            <!-- /.navbar -->
         </div>
     </div>
     <!-- End Upper Bar -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <!-- Start Main-nav -->
+                <ul class="nav navbar-nav">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">art</a></li>
+                    <li><a href="#">isearch</a></li>
+                    <li><a href="#">myauctions</a></li>
+                    <li><a href="#">mybids</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <!-- End Main-nav -->
+
+                <!-- Start Change Language Nav -->
+                <ul class="nav navbar-nav navbar-right lang">
+                    <li><a href="#">nl</a></li>
+                    <li><a href="#">fr</a></li>
+                    <li><a href="#">en</a></li>
+                </ul>
+                <!-- End Change Language Nav -->
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
     <!-- Start Slider -->
     <div id="main-slider" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -91,14 +102,14 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <div class="item active main-item">
                 <img src="img/slide1.jpg" alt="...">
                 <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
                         eu, pretium quis, elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item main-item">
                 <img src="img/slide2.jpg" alt="...">
                 <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
@@ -118,6 +129,9 @@
         </a>
 
     </div>
+    <!-- End Slider -->
+
+    <!-- Start How work -->
     <section class="how-work text-center">
         <div class="container">
             <h2 class="heading">How does it work?</h2>
@@ -140,47 +154,48 @@
             </div>
         </div>
     </section>
+    <!-- End How work -->
+
+    <!-- Start Most popular -->
     <section class="most-pop text-center">
         <div class="container">
             <h2 class="heading">Most popular this week <i class="fa fa-angle-down"></i></h2>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="image">
+                    <div class="image small">
                         <div class="more">
                             <i class="fa fa-search"></i>
-
+                            <div class="overlay"></div>
                         </div>
-                        <img src="img/mockup-img2.png" alt="">
+                        <img src="img/mockup-img2.png" alt="" class="img-responsive">
                     </div>
-                    <div class="image">
+                    <div class="image small">
                         <div class="more">
                             <i class="fa fa-search"></i>
-
+                            <div class="overlay"></div>
                         </div>
-                        <img src="img/mockup-img3.png" alt="">
+                        <img src="img/mockup-img3.png" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="image ">
+                    <div class="image big">
                         <div class="more">
                             <i class="fa fa-search"></i>
-
+                            <div class="overlay"></div>
                         </div>
-                        <img src="img/mockup-img.png" alt="">
+                        <img src="img/mockup-img.png" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <!-- End Most popular -->
 
-    </footer>
+
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
-
 </body>
-
-
 
 </html>

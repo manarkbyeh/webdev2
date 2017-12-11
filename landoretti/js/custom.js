@@ -6,9 +6,31 @@ $(function() {
 
     // Change Header Height
 
-    $('.carousel, .item').height(winH - (navbarH + upperH));
+    $('.carousel, .main-item').height(winH - (navbarH + upperH));
 
     $(window).resize(function() {
-        $('.carousel, .item').height(winH - (navbarH + upperH));
+        $('.carousel, .main-item').height(winH - (navbarH + upperH));
     });
-});
+
+
+
+
+    // Upper Bar Nav
+
+    $('.upper-bar .login-btn').click(function() {
+
+        $(this).parent().addClass('hidden');
+        $(this).parent().next().removeClass('hidden');
+
+    });
+
+    $('.upper-bar .login-form .enter').click(function() {
+
+        $(this).parent().addClass('hidden');
+        $('.upper-bar .login').removeClass('hidden');
+
+    });
+
+
+
+})
