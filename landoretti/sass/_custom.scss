@@ -247,3 +247,59 @@
                     }
                 }
             }
+            
+            footer {
+                .leftlijn {
+                    border-left: 2px solid #eaeaea;
+                    padding-left: 30px;
+                    height: 500px;
+                    margin-top: -50px;
+                }
+                hr {
+                    border-top: 2px solid#e5e5e5;
+                    margin-bottom: 50px;
+                }
+                .menus {
+                    margin-bottom: 80px
+                }
+                .menu {
+                    h4 {
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    a {
+                        color: #01a6a0;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                }
+                .search {
+                    margin-bottom: 30px;
+                    h4 {
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    input {
+                        width: 207px;
+                        height: 28px;
+                        display: inline-block;
+                        box-shadow: none !important;
+                        border: 1px solid#bebebd;
+                        color: #333;
+                        &::-webkit-input-placeholder {
+                            color: #333;
+                        }
+                    }
+                    button {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                        color: #0f2277;
+                    }
+                }
+            }
