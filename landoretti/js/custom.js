@@ -27,7 +27,7 @@ $(function() {
     $('.upper-bar .login-form .enter').click(function() {
 
         $(this).parent().addClass('hidden');
-        $('.upper-bar .login').removeClass('hidden');
+        $('.upper-bar .logged').removeClass('hidden');
 
     });
 
