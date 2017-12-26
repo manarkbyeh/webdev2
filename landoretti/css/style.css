@@ -10946,20 +10946,28 @@ button.close {
   opacity: .5;
 }
 
+.carousel .left {
+  left: -6%;
+}
+
+.carousel .right {
+  right: -6%;
+}
+
 .carousel .carousel-control {
   background: transparent !important;
   opacity: 1;
   text-shadow: none;
-  top: 40%;
+  top: 50%;
+  padding-left: -50px;
   cursor: default;
 }
 
 .carousel .carousel-control span {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 48px;
-  width: 50px;
-  height: 80px;
-  line-height: 80px;
+  width: 40px;
+  height: 50px;
   cursor: pointer;
   color: #e8e8e8;
 }
@@ -11068,12 +11076,18 @@ button.close {
 
 footer .leftlijn {
   border-left: 2px solid #eaeaea;
-  height: 500px;
+  height: 430px;
 }
 
 footer hr {
   border-top: 2px solid #e5e5e5;
   margin-top: 100px;
+  margin-bottom: -1px;
+}
+
+footer .menu {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 footer .menu h4 {
@@ -11089,11 +11103,21 @@ footer .menu a {
   font-size: 14px;
 }
 
-footer .contact .social {
+footer .contact {
+  padding-left: 10px;
+}
+
+footer .contact .social li {
   display: inline-block;
 }
 
+footer .contact .rights {
+  margin-top: 100px;
+}
+
 footer .zoek {
+  padding-top: 10px;
+  padding-left: 10px;
   margin-bottom: 30px;
 }
 
@@ -11101,7 +11125,7 @@ footer .zoek h4 {
   color: #000;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 footer .zoek input {
@@ -11128,6 +11152,7 @@ footer .zoek button {
 footer .navbar {
   border-bottom: 4px solid #01a6a0;
   position: relative;
+  border-top: -10px;
 }
 
 footer .navbar .navbar-brand {
@@ -11139,8 +11164,4 @@ footer .navbar .navbar-brand {
 
 footer .navbar .navbar-brand img {
   box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2);
-}
-
-footer .coptytekst {
-  float: right;
 }
