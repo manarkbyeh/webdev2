@@ -12,8 +12,13 @@ $(function() {
         $('.carousel, .main-item').height(winH - (navbarH + upperH));
     });
 
+    // Slider Add Background-image
 
-
+    $('#main-slider .item img').each(function() {
+        var imgSrc = $(this).attr('src');
+        $(this).parent().css({ 'background-image': 'url(' + imgSrc + ')' });
+        $(this).remove();
+    });
 
     // Upper Bar Nav
 
@@ -27,7 +32,16 @@ $(function() {
     $('.upper-bar .login-form .enter').click(function() {
 
         $(this).parent().addClass('hidden');
-        $('.upper-bar .logged').removeClass('hidden');
+        $('.upper-bar .login').removeClass('hidden');
+
+    });
+
+    // Overzicht Filter
+
+    $('.filter .ad-options i').click(function() {
+
+        $('.filter .list').slideToggle(200);
+        $(this).toggleClass('rotate');
 
     });
 
