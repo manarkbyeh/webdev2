@@ -6,10 +6,10 @@ $(function() {
 
     // Change Header Height
 
-    $('.carousel, .main-item').height(winH - (navbarH + upperH));
+    $('.carousel, .main-item').height(winH - (navbarH));
 
     $(window).resize(function() {
-        $('.carousel, .main-item').height(winH - (navbarH + upperH));
+        $('.carousel, .main-item').height(winH - (navbarH));
     });
 
     // Slider Add Background-image
@@ -32,7 +32,7 @@ $(function() {
     $('.upper-bar .login-form .enter').click(function() {
 
         $(this).parent().addClass('hidden');
-        $('.upper-bar .login').removeClass('hidden');
+        $('.upper-bar .logged').removeClass('hidden');
 
     });
 
